@@ -1,0 +1,9 @@
+{
+  "languages": [
+    { "text": "English", "class":"english","imgUrl":"http://localhost:1235/default/assets/images/flags/gb.png"},
+    { "text": "Deutsch", "class":"deutsch","imgUrl":"http://localhost:1235/default/assets/images/flags/de.png"},
+    { "text": "Українська", "class":"ukrainian","imgUrl":"http://localhost:1235/default/assets/images/flags/ua.png"},
+    { "text": "España", "class":"espana","imgUrl":"http://localhost:1235/default/assets/images/flags/es.png"},
+    { "text": "Русский", "class":"russian","imgUrl":"http://localhost:1235/default/assets/images/flags/ru.png"}
+  ]
+}
