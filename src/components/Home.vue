@@ -10,11 +10,11 @@
         <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
       </ul>
       <ul class="nav navbar-nav">
-        <li v-for="headerBaseMenu in headerBaseMenus"><a href="#">{{headerBaseMenu.text}}</a></li>
+        <li v-for="headerBaseMenu in headerBaseMenus" :key="headerBaseMenu.index"><a href="#">{{headerBaseMenu.text}}</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{headerCodeMenu.codeMenu}}<span class="caret"></span></a>
           <ul class="dropdown-menu dropdown-menu-right">
-            <li v-for="codeMenuChild in headerCodeMenu.codeMenuChilds"><a href="#">{{codeMenuChild.text}}</a></li>
+            <li v-for="codeMenuChild in headerCodeMenu.codeMenuChilds" :key="codeMenuChild.index"><a href="#">{{codeMenuChild.text}}</a></li>
           </ul>
         </li>
       </ul>
@@ -30,7 +30,7 @@
             </a>
 
             <ul class="dropdown-menu" id="v-for-languages">
-              <li v-for="language in languages"><a :class="language.class"class="deutsch"><img :src="language.imgUrl" >{{language.text}}</a></li>
+              <li v-for="language in languages" :key="language.index"><a :class="language.class"><img :src="language.imgUrl" >{{language.text}}</a></li>
             </ul>
           </li>
 
